@@ -24,7 +24,7 @@ def test_autoriz_valid_email_pass(selenium):
                          ids=['invalid_password', 'empty'])
 
 def test_autoriz_invalid_email_pass(selenium, incor_email, incor_passw):
-    """EXP-002, TК-003 "Проверка аутентификации пользователя с невалидным (не верным)email и паролем:
+    """EXP-002, EXP-003 "Проверка аутентификации пользователя с невалидным (не верным)email и паролем:
     связка Почта+Пароль валидна, но пользователь с такими данными не зарегистрирован в системе;
     пустые значения."""
     page = AuthPage(selenium)
